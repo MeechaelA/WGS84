@@ -74,14 +74,20 @@ pub mod transforms{
         }
     
         if iter == 100 {
-            panic!("Reached maximum number of iterations.");
+            let zdz = z + dz;
+            let lon = y.atan2(x);
+            let lat = zdz.atan2(rho2.sqrt());
+            let alt = (rho2 + zdz * zdz).sqrt() - N;
+        
+            return Matrix3x1::new(lat, lon, alt)                       
         }
-    
-        let zdz = z + dz;
-        let lon = y.atan2(x);
-        let lat = zdz.atan2(rho2.sqrt());
-        let alt = (rho2 + zdz * zdz).sqrt() - N;
-    
-        return Matrix3x1::new(lat, lon, alt)
+        else{
+            let zdz = z + dz;
+            let lon = y.atan2(x);
+            let lat = zdz.atan2(rho2.sqrt());
+            let alt = (rho2 + zdz * zdz).sqrt() - N;
+        
+            return Matrix3x1::new(lat, lon, alt)           
+        }
     }
 }
