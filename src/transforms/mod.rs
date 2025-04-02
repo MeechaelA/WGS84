@@ -1,5 +1,5 @@
 pub mod transforms{
-    use nalgebra::{ComplexField, Matrix3x1};
+    use nalgebra::{RealField, ComplexField, Matrix3x1};
     use crate::constants::constants::{GM, g_e, b, k, e2, E, w, a};
     
     pub fn geocentric_to_ecef(latitude: f64, longitude: f64, altitude: f64)->Matrix3x1<f64>{
