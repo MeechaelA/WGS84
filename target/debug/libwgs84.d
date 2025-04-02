@@ -1,0 +1,1 @@
+/home/bigmeech/Software/wgs84/target/debug/libwgs84.rlib: /home/bigmeech/Software/wgs84/src/constants/mod.rs /home/bigmeech/Software/wgs84/src/gravity/gravity.rs /home/bigmeech/Software/wgs84/src/gravity/mod.rs /home/bigmeech/Software/wgs84/src/lib.rs /home/bigmeech/Software/wgs84/src/transforms/mod.rs

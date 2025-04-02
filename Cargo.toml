@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-nalgebra = {version = "*", features = ["libm-force"]}
+nalgebra = { version = "*", default-features = false, features = [ "libm" ] }
